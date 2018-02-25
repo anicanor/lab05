@@ -44,7 +44,7 @@ void List::compare(int target, int &less_than, int &equal, int &greater_than)
 {
     
     
-    for (Node *ptr = m_head; ptr; ptr = ptr->m_next)
+    for (Node *ptr = m_head; ptr; ptr = ptr->m_next){
             
         if(target > m_head->m_value){
             greater_than++;
