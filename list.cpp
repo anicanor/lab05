@@ -43,6 +43,15 @@ void List::print()
 void List::compare(int target, int &less_than, int &equal, int &greater_than)
 {
 
-    // put your code here 
+    While(m_head != NULL){
+            
+        if(target > m_head->m_data){
+            greater_than++;
+        }else if(target < m_head->m_data){
+            less_than++;
+        }else{
+            equal++;
+        }
+    }
 
 }
