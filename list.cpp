@@ -45,9 +45,9 @@ void List::compare(int target, int &less_than, int &equal, int &greater_than)
 
     while(m_head != NULL){
             
-        if(target > m_head->m_data){
+        if(target > m_head->m_value){
             greater_than++;
-        }else if(target < m_head->m_data){
+        }else if(target < m_head->m_value){
             less_than++;
         }else{
             equal++;
