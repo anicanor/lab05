@@ -43,17 +43,17 @@ void List::print()
 void List::compare(int target, int &less_than, int &equal, int &greater_than)
 {
     
-    
-    for (Node *ptr = m_head; ptr; ptr = ptr->m_next){
+     Node *ptr = m_head;
+     while ( ptr != NULL){
             
-        if(target > m_head->m_value){
+        if(target > ptr->m_value){
             greater_than++;
-        }else if(target < m_head->m_value){
+        }else if(target < ptr->m_value){
             less_than++;
         }else{
             equal++;
         }
-        
+        ptr = ptr−>m_next;
     }
 
 }
